@@ -10,7 +10,7 @@ body {
     max-width: 88em;
     padding-left: 0px;
     padding-right: 0px;
-    padding-top: 20px;
+    padding-top: 5px;
     padding-bottom: 50px;
     hyphens: auto;
     overflow-wrap: break-word;
@@ -20,7 +20,7 @@ body {
 @media (max-width: 600px) {
     body {
     font-size: 0.9em;
-    padding: 1em;
+    padding: 0em;
     }
 }
 @media print {
@@ -144,12 +144,13 @@ header {
     }
     img {
         max-width: 40%;
-        margin-top: 10px;
-        padding-right: 10%;
+        margin-top: 5px;
+        padding-right: 2%;
         float: right;
     }
     h1 {
         font-size: 34px;
+        margin-top: -1px;
     }
 }
 @media (min-width: 766px) {
@@ -165,7 +166,7 @@ header {
     }
     img {
         max-width: 80%;
-        margin-top: 10px;
+        margin-top: 0px;
         padding-right: 10px;
     }
     h1 {
