@@ -7,10 +7,10 @@ html {
 }
 body {
     margin: 0 auto;
-    max-width: 66em;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 50px;
+    max-width: 88em;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 20px;
     padding-bottom: 50px;
     hyphens: auto;
     overflow-wrap: break-word;
@@ -22,14 +22,11 @@ body {
     font-size: 0.9em;
     padding: 1em;
     }
-    h1 {
-    font-size: 1.8em;
-    }
 }
 @media print {
     body {
     background-color: transparent;
-    color: #56a6ff;
+    color: #1f2f2f;
     font-size: 12pt;
     }
     p, h2, h3 {
@@ -48,11 +45,6 @@ a {
 }
 a:visited {
     color: #1a1a1a;
-}
-img {
-    max-width: 80%;
-    margin-top: 10px;
-    padding-right: 10%;
 }
 h1, h2, h3, h4, h5, h6 {
     margin-top: 1.4em;
@@ -143,16 +135,47 @@ header {
 * {
     box-sizing: border-box;
 }
-.left {
-    float: left;
-    width: 50%;
-    padding: 10px;
+@media (orientation: portrait) or (max-width: 766px) {
+    .left {
+        padding: 5px;
+    }
+    .right {
+        padding: 5px;
+    }
+    img {
+        max-width: 40%;
+        margin-top: 10px;
+        padding-right: 10%;
+        float: right;
+    }
+    h1 {
+        font-size: 34px;
+    }
 }
-.right {
-    float: left;
-    padding: 10px;
-    padding-left: 40%;
-    position: fixed;
+@media (min-width: 766px) {
+    .left {
+        float: left;
+        width: 55%;
+        padding: 10px;
+    }
+    .right {
+        padding: 0px;
+        padding-left: 55%;
+        position: fixed;
+    }
+    img {
+        max-width: 80%;
+        margin-top: 10px;
+        padding-right: 10px;
+    }
+    h1 {
+        font-size: 34px;
+    }
+    .bottom-left {
+        position: absolute;
+        top: 50%;
+        text-align: left;
+    }
 }
 .row:after {
     content: "";
@@ -161,19 +184,8 @@ header {
 }
 .container {
     position: relative;
-    text-align: center;
-    color: white;
-}
-.top-left {
-    position: absolute;
-    top: 8px;
-    left: 16px;
-}
-.bottom-left {
-    position: absolute;
-    bottom: 20%;
-    left: 8px;
     text-align: left;
+    color: white;
 }
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
