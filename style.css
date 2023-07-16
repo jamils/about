@@ -51,12 +51,8 @@ a:visited {
 h1 {
     margin-bottom: -1px;
 }
-h2, h3 {
-    /* margin-top: 1.4em; */
-    margin-left: -1.4em;
-}
-h4, h5, h6 {
-    margin-left: -2em;
+h2 {
+    padding-left: 2px;
 }
 h5, h6 {
     font-size: 1em;
@@ -108,7 +104,7 @@ table {
     border-collapse: collapse;
     width: 100%;
     overflow-x: auto;
-    display: block;
+    display: inline-flex;
     font-variant-numeric: lining-nums tabular-nums;
 }
 table caption {
@@ -152,15 +148,23 @@ header {
     .right {
         padding: 5px;
     }
-    img {
+    .profilepic {
         max-width: 40%;
         margin-top: 5px;
         padding-right: 0%;
         float: right;
     }
+    img {
+        padding: 2px;
+    }
     h1 {
         font-size: 34px;
         margin-top: -1px;
+    }
+    .paragraph {
+        word-wrap: initial;
+        margin-top: 1%;
+        max-width: 80%;
     }
 }
 @media (min-width: 766px) {
@@ -187,6 +191,24 @@ header {
         top: 50%;
         text-align: left;
     }
+}
+.content {
+    margin-left: 13px;
+    border-left: solid #7ee787;
+    padding-left: 10px;
+}
+.paragraph {
+    margin-left: 0em;
+    background: #1a1a1a;
+    padding-left: 70px;
+    padding-right: 40px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-radius: 500px;
+    opacity: 80%;
+    font-size: 15px;
+    border-left: thick solid #6e40c9;
+    border-right: thick solid #6e40c9;
 }
 .row:after {
     content: "";
@@ -215,4 +237,4 @@ ul.task-list li input[type="checkbox"] {
     vertical-align: 0.15em;
     margin-left: -0.36em;
     margin-right: -0.15em;
-  }
+}
