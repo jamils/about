@@ -195,6 +195,10 @@ header {
 .content {
     margin-left: 13px;
     border-left: solid #7ee787;
+    border-top: hidden;
+    border-right: hidden;
+    border-bottom: hidden;
+    /* border-image: url("img/git-branch-productivity.svg"); */
     padding-left: 10px;
 }
 .paragraph {
@@ -238,3 +242,6 @@ ul.task-list li input[type="checkbox"] {
     margin-left: -0.36em;
     margin-right: -0.15em;
 }
+/* .glowicon {
+    filter: url(#sofGlow);
+} */
