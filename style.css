@@ -68,6 +68,12 @@ ol, ul {
 li > ol, li > ul {
     margin-top: 0;
 }
+ul {
+    list-style-image: url("img/git-commit.svg");
+}
+ol {
+    list-style-image: url("img/git-branch-productivity.svg");
+}
 blockquote {
     margin: 1em 0 1em 1.7em;
     padding-left: 1em;
